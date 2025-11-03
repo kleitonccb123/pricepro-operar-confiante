@@ -34,7 +34,7 @@ export const LeadForm = () => {
         name: validatedData.name,
         email: validatedData.email,
         whatsapp: validatedData.whatsapp,
-        produto: "Price Pro",
+        produto: "Price Pro Fx",
       });
 
       if (error) throw error;
