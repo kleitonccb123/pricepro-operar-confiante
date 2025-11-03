@@ -126,7 +126,7 @@ export const LeadForm = () => {
           htmlFor="consent"
           className="text-sm text-foreground/70 leading-relaxed cursor-pointer"
         >
-          Quero receber mais informações, materiais e ofertas por email/WhatsApp
+          Quero receber mais informações, materiais e ofertas sobre o Price Pro por e-mail/WhatsApp.
         </Label>
       </div>
 
@@ -135,19 +135,8 @@ export const LeadForm = () => {
         disabled={isSubmitting}
         className="w-full bg-gradient-to-r from-primary to-primary/90 hover:shadow-[var(--shadow-glow)] transition-all duration-300 text-primary-foreground font-semibold py-6 text-lg rounded-xl"
       >
-        {isSubmitting ? "ENVIANDO..." : "CONFIRMAR MEU CADASTRO"}
+        {isSubmitting ? "ENVIANDO..." : "🎯 ACESSAR EVENTO GRATUITO"}
       </Button>
-
-      <div className="space-y-2 pt-2">
-        <p className="text-xs text-foreground/40 flex items-start gap-2">
-          <span>✕</span>
-          <span>Não precisa de experiência</span>
-        </p>
-        <p className="text-xs text-foreground/40 flex items-start gap-2">
-          <span>✕</span>
-          <span>Não precisa mostrar o rosto</span>
-        </p>
-      </div>
     </form>
   );
 };
