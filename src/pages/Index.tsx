@@ -71,45 +71,7 @@ const Index = () => {
         </main>
 
         {/* Benefits Section */}
-        <section className="relative z-10 py-12 px-4 bg-secondary/30">
-          <div className="container max-w-6xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8">
-              Benefícios do <span className="text-primary">Price Pro</span>
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <div className="flex items-start gap-3">
-                <span className="text-primary text-xl">✅</span>
-                <p className="text-foreground/80">
-                  <strong>Não precisa de experiência prévia</strong> — o indicador mostra pontos claros de entrada e saída.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-primary text-xl">✅</span>
-                <p className="text-foreground/80">
-                  <strong>Não precisa aparecer nem operar o dia inteiro</strong> — siga o método de forma prática e objetiva.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-primary text-xl">✅</span>
-                <p className="text-foreground/80">
-                  <strong>Indicador 100% configurável</strong> — funciona direto no MetaTrader.
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-primary text-xl">✅</span>
-                <p className="text-foreground/80">
-                  <strong>Método testado e comprovado</strong> — comunidade ativa de traders aplicando diariamente.
-                </p>
-              </div>
-              <div className="flex items-start gap-3 md:col-span-2 justify-center">
-                <span className="text-primary text-xl">✅</span>
-                <p className="text-foreground/80">
-                  <strong>Suporte individual</strong> — ajuda na instalação, configuração e primeiros trades.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Testimonials Section */}
         
