@@ -34,6 +34,11 @@ const Index = () => {
                 <img src={promoImg} alt="Método Price Pro Forex" className="w-full h-auto rounded-xl shadow-lg" />
               </div>
 
+              {/* Form Section - Right after image */}
+              <div id="form-section" className="w-full max-w-sm pt-4">
+                <LeadForm />
+              </div>
+
               {/* Headline */}
               <div className="space-y-4 text-center max-w-sm px-2">
                 <h2 className="text-2xl font-bold leading-tight">
@@ -56,11 +61,6 @@ const Index = () => {
                   <span className="text-2xl mt-0.5">✓</span>
                   <p className="text-base text-foreground/90 font-medium">Não precisa mostrar o rosto</p>
                 </div>
-              </div>
-
-              {/* Form Section - Right after image */}
-              <div id="form-section" className="w-full max-w-sm pt-2">
-                <LeadForm />
               </div>
 
               {/* CTA Button */}
