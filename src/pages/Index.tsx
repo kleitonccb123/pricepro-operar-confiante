@@ -22,54 +22,54 @@ const Index = () => {
           <div className="container max-w-md lg:max-w-7xl mx-auto">
             {/* Mobile Layout (Stack) */}
             <div className="flex flex-col items-center space-y-6 lg:hidden">
-              {/* CTA Button */}
-              <button 
-                onClick={() => document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full max-w-sm bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-6 rounded-xl text-lg transition-all hover:shadow-[var(--shadow-glow)]"
-              >
-                Me inscrever agora →
-              </button>
-
-              {/* Benefit Points */}
-              <div className="w-full max-w-sm space-y-3 text-left">
-                <div className="flex items-start gap-2">
-                  <span className="text-lg mt-0.5">✗</span>
-                  <p className="text-sm text-foreground/80">Não precisa de experiência</p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-lg mt-0.5">✗</span>
-                  <p className="text-sm text-foreground/80">Não precisa mostrar o rosto</p>
-                </div>
-              </div>
-
               {/* Logo */}
               <div className="text-center">
-                <h1 className="text-3xl font-bold tracking-wide text-primary mb-1">
+                <h1 className="text-4xl font-bold tracking-wide text-primary mb-1">
                   PRICE PRO FX
                 </h1>
               </div>
 
-              {/* Headline */}
-              <div className="space-y-3 text-center max-w-sm">
-                <h2 className="text-xl font-bold leading-tight">
-                  Depois que você conhecer o método Price Pro Fx, vai entender o que é operar como um verdadeiro{" "}
-                  <span className="text-primary">PROFISSIONAL.</span>
-                </h2>
-                
-                <p className="text-foreground/80 text-sm leading-relaxed">
-                  Pela primeira vez, vou revelar o método e o indicador que mudaram completamente meu resultado no mercado — e podem mudar o seu também.
-                </p>
-              </div>
-
-              {/* Promo Image */}
+              {/* Promo Image - First */}
               <div className="w-full max-w-sm">
                 <img src={promoImg} alt="Método Price Pro Forex" className="w-full h-auto rounded-xl shadow-lg" />
               </div>
 
-              {/* Form Section */}
-              <div id="form-section" className="w-full max-w-sm pt-4">
+              {/* Headline */}
+              <div className="space-y-4 text-center max-w-sm px-2">
+                <h2 className="text-2xl font-bold leading-tight">
+                  Depois que você conhecer o método Price Pro Fx, vai entender o que é operar como um verdadeiro{" "}
+                  <span className="text-primary">PROFISSIONAL.</span>
+                </h2>
+                
+                <p className="text-foreground/80 text-base leading-relaxed">
+                  Pela primeira vez, vou revelar o método e o indicador que mudaram completamente meu resultado no mercado — e podem mudar o seu também.
+                </p>
+              </div>
+
+              {/* Benefit Points */}
+              <div className="w-full max-w-sm space-y-4 px-2">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl mt-0.5">✓</span>
+                  <p className="text-base text-foreground/90 font-medium">Não precisa de experiência</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl mt-0.5">✓</span>
+                  <p className="text-base text-foreground/90 font-medium">Não precisa mostrar o rosto</p>
+                </div>
+              </div>
+
+              {/* Form Section - Right after image */}
+              <div id="form-section" className="w-full max-w-sm pt-2">
                 <LeadForm />
               </div>
+
+              {/* CTA Button */}
+              <button 
+                onClick={() => document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full max-w-sm bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-8 rounded-xl text-xl transition-all hover:shadow-[var(--shadow-glow)] shadow-lg"
+              >
+                GARANTIR MINHA VAGA AGORA →
+              </button>
             </div>
 
             {/* Desktop Layout (Side by Side) */}
