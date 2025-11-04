@@ -41,7 +41,7 @@ export const LeadForm = () => {
 
       toast({
         title: "Cadastro confirmado!",
-        description: "Em breve você receberá mais informações.",
+        description: "Te aguardo na grande live! Você será redirecionado para o grupo...",
       });
 
       // Reset form
@@ -49,6 +49,11 @@ export const LeadForm = () => {
       setEmail("");
       setWhatsapp("");
       setConsent(false);
+
+      // Redirect to WhatsApp group
+      setTimeout(() => {
+        window.location.href = "https://chat.whatsapp.com/LO9TRq060Nt7iR8oLXRY4U?mode=wwt";
+      }, 1500);
     } catch (error) {
       if (error instanceof z.ZodError) {
         toast({
