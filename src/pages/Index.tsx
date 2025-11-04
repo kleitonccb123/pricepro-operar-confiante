@@ -22,17 +22,6 @@ const Index = () => {
           <div className="container max-w-md lg:max-w-7xl mx-auto">
             {/* Mobile Layout (Stack) */}
             <div className="flex flex-col items-center space-y-6 lg:hidden">
-              {/* Video/Presenter Image */}
-              <div className="relative w-full max-w-sm">
-                <div className="relative rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl">
-                  <img src={presenterImg} alt="Apresentador do Price Pro Fx" className="w-full h-auto" />
-                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                    <EventBadge date="11 de novembro - 19h" />
-                    <EventBadge isLive />
-                  </div>
-                </div>
-              </div>
-
               {/* CTA Button */}
               <button 
                 onClick={() => document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth' })}
@@ -87,12 +76,6 @@ const Index = () => {
             <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column */}
               <div className="flex flex-col items-center space-y-6">
-                <div className="relative w-full max-w-lg">
-                  <div className="relative rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl">
-                    <img src={presenterImg} alt="Apresentador do Price Pro Fx" className="w-full h-auto" />
-                  </div>
-                </div>
-                
                 {/* Promo Image Desktop */}
                 <div className="w-full max-w-lg">
                   <img src={promoImg} alt="Método Price Pro Forex" className="w-full h-auto rounded-xl shadow-lg" />
