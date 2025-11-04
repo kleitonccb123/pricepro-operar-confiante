@@ -52,7 +52,7 @@ const Index = () => {
               {/* Headline */}
               <div className="space-y-3 text-center max-w-sm">
                 <h2 className="text-xl font-bold leading-tight">
-                  Depois que você conhecer o Price Pro, vai entender o que é operar como um verdadeiro{" "}
+                  Depois que você conhecer o método Price Pro Fx, vai entender o que é operar como um verdadeiro{" "}
                   <span className="text-primary">PROFISSIONAL.</span>
                 </h2>
                 
@@ -93,10 +93,10 @@ const Index = () => {
                 <EventBadge date="11 de novembro - 19h" isLive />
 
                 <div className="space-y-4 text-left max-w-lg">
-                  <h2 className="text-3xl xl:text-4xl font-bold leading-tight">
-                    Depois que você conhecer o Price Pro, vai entender o que é operar como um verdadeiro{" "}
-                    <span className="text-primary">PROFISSIONAL.</span>
-                  </h2>
+                <h2 className="text-3xl xl:text-4xl font-bold leading-tight">
+                  Depois que você conhecer o método Price Pro Fx, vai entender o que é operar como um verdadeiro{" "}
+                  <span className="text-primary">PROFISSIONAL.</span>
+                </h2>
                   
                   <p className="text-foreground/80 text-base leading-relaxed pt-2">
                     Pela primeira vez, vou revelar o método e o indicador que mudaram completamente meu resultado no mercado — e podem mudar o seu também.
