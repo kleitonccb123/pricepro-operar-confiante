@@ -64,10 +64,9 @@ const Index = () => {
               </div>
 
               {/* CTA Button */}
-              <button 
-                onClick={() => document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full max-w-sm bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-8 rounded-xl text-xl transition-all hover:shadow-[var(--shadow-glow)] shadow-lg"
-              >
+              <button onClick={() => document.getElementById('form-section')?.scrollIntoView({
+              behavior: 'smooth'
+            })} className="w-full max-w-sm bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-8 rounded-xl text-xl transition-all hover:shadow-[var(--shadow-glow)] shadow-lg">
                 GARANTIR MINHA VAGA AGORA →
               </button>
             </div>
@@ -85,9 +84,7 @@ const Index = () => {
               {/* Right Column - Form */}
               <div className="flex flex-col items-start space-y-6">
                 <div className="text-left">
-                  <h1 className="text-5xl font-bold tracking-wide text-primary mb-2">
-                    PRICE PRO FX
-                  </h1>
+                  
                 </div>
 
                 <EventBadge date="11 de novembro - 19h" isLive />
