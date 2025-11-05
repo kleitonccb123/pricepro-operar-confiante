@@ -127,12 +127,6 @@ export const LeadForm = () => {
           onCheckedChange={(checked) => setConsent(checked as boolean)}
           className="mt-1"
         />
-        <Label
-          htmlFor="consent"
-          className="text-sm text-foreground/70 leading-relaxed cursor-pointer"
-        >
-          Quero receber mais informações, materiais e ofertas sobre o Price Pro por e-mail/WhatsApp.
-        </Label>
       </div>
 
       <Button
