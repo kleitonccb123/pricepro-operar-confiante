@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -15,6 +16,7 @@ export const LeadForm = () => {
   const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
   const {
     toast
   } = useToast();
@@ -38,7 +40,7 @@ export const LeadForm = () => {
       if (error) throw error;
       toast({
         title: "Cadastro confirmado!",
-        description: "Te aguardo na grande live! Você será redirecionado para o grupo..."
+        description: "Te aguardo na grande live!"
       });
 
       // Reset form
@@ -46,10 +48,10 @@ export const LeadForm = () => {
       setEmail("");
       setWhatsapp("");
 
-      // Redirect to WhatsApp group
+      // Redirect to thank you page
       setTimeout(() => {
-        window.location.href = "https://chat.whatsapp.com/LO9TRq060Nt7iR8oLXRY4U?mode=wwt";
-      }, 1500);
+        navigate("/obrigado");
+      }, 1000);
     } catch (error) {
       if (error instanceof z.ZodError) {
         toast({
