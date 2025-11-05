@@ -1,13 +1,9 @@
 import { EventBadge } from "@/components/EventBadge";
 import { LeadForm } from "@/components/LeadForm";
-import { CountdownTimer } from "@/components/CountdownTimer";
 import tradingBg from "@/assets/trading-bg.jpg";
 import presenterImg from "@/assets/presenter.jpg";
 import promoImg from "@/assets/price-pro-promo.png";
 const Index = () => {
-  // Event date: November 11, 2025 at 19:00 (7 PM)
-  const eventDate = new Date(2025, 10, 11, 19, 0, 0);
-  
   return <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0" style={{
@@ -92,8 +88,6 @@ const Index = () => {
                 </div>
 
                 <EventBadge date="11 de novembro - 19h" isLive />
-                
-                <CountdownTimer targetDate={eventDate} />
 
                 <div className="space-y-4 text-left max-w-lg">
                 <h2 className="text-3xl xl:text-4xl font-bold leading-tight">
