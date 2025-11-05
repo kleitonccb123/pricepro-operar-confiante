@@ -104,9 +104,7 @@ const Index = () => {
                   <LeadForm />
                 </div>
 
-                <p className="text-primary font-semibold text-base">
-                  👉 Clique abaixo e garanta sua vaga gratuita para assistir ao evento ao vivo!
-                </p>
+                <p className="text-primary font-semibold text-base">👉 Clique e garanta sua vaga gratuita para assistir ao evento ao vivo!</p>
               </div>
             </div>
           </div>
