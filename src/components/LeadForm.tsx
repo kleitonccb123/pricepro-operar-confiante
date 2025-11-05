@@ -2,21 +2,18 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 const leadSchema = z.object({
   name: z.string().trim().min(2, "Nome deve ter pelo menos 2 caracteres").max(100),
   email: z.string().trim().email("Email inválido").max(255),
-  whatsapp: z.string().trim().min(10, "WhatsApp inválido").max(20),
-  consent: z.boolean().refine(val => val === true, "Você deve aceitar para continuar")
+  whatsapp: z.string().trim().min(10, "WhatsApp inválido").max(20)
 });
 export const LeadForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
-  const [consent, setConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     toast
@@ -27,8 +24,7 @@ export const LeadForm = () => {
       const validatedData = leadSchema.parse({
         name,
         email,
-        whatsapp,
-        consent
+        whatsapp
       });
       setIsSubmitting(true);
       const {
@@ -49,7 +45,6 @@ export const LeadForm = () => {
       setName("");
       setEmail("");
       setWhatsapp("");
-      setConsent(false);
 
       // Redirect to WhatsApp group
       setTimeout(() => {
