@@ -98,14 +98,15 @@ const Index = () => {
                   <p className="text-foreground/80 text-base leading-relaxed pt-2">
                     Pela primeira vez, vou revelar o método e o indicador que mudaram completamente meu resultado no mercado — e podem mudar o seu também.
                   </p>
-                  <p className="text-primary font-semibold text-base pt-2">
-                    👉 Clique abaixo e garanta sua vaga gratuita para assistir ao evento ao vivo!
-                  </p>
                 </div>
 
                 <div className="w-full max-w-lg">
                   <LeadForm />
                 </div>
+
+                <p className="text-primary font-semibold text-base">
+                  👉 Clique abaixo e garanta sua vaga gratuita para assistir ao evento ao vivo!
+                </p>
               </div>
             </div>
           </div>
